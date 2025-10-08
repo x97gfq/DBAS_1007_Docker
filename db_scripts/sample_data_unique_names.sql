@@ -1,5 +1,5 @@
 
-USE student_db;
+USE student_db_w0304317;
 
 INSERT INTO student (student_id, first_name, last_name, email) VALUES (1, 'Erin', 'Miller', 'erin.miller@example.com');
 INSERT INTO student (student_id, first_name, last_name, email) VALUES (2, 'Michael', 'Bailey', 'michael.bailey@example.com');

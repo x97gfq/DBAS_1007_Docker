@@ -1,10 +1,11 @@
-CREATE DATABASE IF NOT EXISTS student_db;
-USE student_db;
+
+CREATE DATABASE IF NOT EXISTS student_db_w0304317;
+USE student_db_0304317;
 
 #change student_w0XXXXXX to your own W# in -both- places:
 
-CREATE USER IF NOT EXISTS 'student_w0XXXXXX'@'%' IDENTIFIED BY 'Passw0rd!';
-GRANT ALL PRIVILEGES ON student_db.* TO 'student_w0XXXXXX'@'%';
+CREATE USER IF NOT EXISTS 'student_w0304317'@'%' IDENTIFIED BY 'Passw0rd!';
+GRANT ALL PRIVILEGES ON student_db_w0304317.* TO 'student_w0304317'@'%';
 FLUSH PRIVILEGES;
 
 -- Create student table
@@ -31,3 +32,6 @@ CREATE TABLE studentCourse (
     FOREIGN KEY (student_id) REFERENCES student(student_id),
     FOREIGN KEY (course_id) REFERENCES course(course_id)
 );
+
+
+
